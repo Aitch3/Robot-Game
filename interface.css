@@ -104,7 +104,7 @@ div.container {
 }
 
 #statusBar {
-    visibility: hidden;
+   /* visibility: hidden;*/
 }
 
 #scrapbot {
