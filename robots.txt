@@ -1,0 +1,64 @@
+resources could be
+gears
+batteries
+oil
+scrap metal
+wires
+plastic
+wood
+concrete
+concrete concentrate
+glass
+circuits
+microchips
+
+dreams
+electric sheep
+steel wool
+
+mercury
+yttrium
+
+energy
+power
+
+electro-
+mecha-
+gyro-
+cyber-
+
+
+-bot
+-tron
+-tronic
+-
+
+sKillbots (repurposed killbots)
+Gyrotrons
+Finderbot
+Grinders
+Rollertrons
+Constructo 2000
+
+active/inactive/broken
+
+windmills
+repair-o-mat
+
+
+Have only one robot of each type
+Start with manual replacement of batteries.
+Each robot starts with space for 2 or so batteries.
+and has a button to replace empty battery.
+
+Robots have space for upgrades(1, 2, or 3), and certain characteristics can be upgraded as well.
+
+add gamestate
+idle or produce
+explore
+quest
+clear land
+
+
+To work on:
+Make a header fade in
