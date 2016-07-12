@@ -167,7 +167,7 @@ function makeVisible() {
         document.getElementById('scrapbot').style.visibility = "visible";
     }
     if (robofriends.bought === 1) {
-         document.getElementById('statusBar').style.visibility = "visible";
+        document.getElementById('statusBar').style.visibility = "visible";
     }
     if ((grinder.found + grinder.broken) >= 1) {
         document.getElementById('grinder').style.visibility = "visible";
@@ -349,6 +349,7 @@ function build(building, number) {
         windmill.costScrapMetal *= Math.pow(windmill.costIncrement, windmill.amount);
         windmill.costGears = windmill.costGears.toFixed(3);
         windmill.costScrapMetal = windmill.costScrapMetal.toFixed(3);
+        document.getElementById('statusBarText').innerHTML = "You have purchased a windmill.";
         updateAll();
     }
     if (building === 'pumpjack' && pumpjack.costGears <= gears && pumpjack.costScrapMetal <= scrapMetal  && pumpjack.costConcrete <= concrete && land.clear >= number) {

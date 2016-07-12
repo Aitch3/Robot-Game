@@ -61,4 +61,13 @@ clear land
 
 
 To work on:
-Make a header fade in
+Make a scrolling textbox for game messages
+Make containers resize to what is visible
+Make a progress bar for clearing land
+Make battery bars to count down battery charge for robots
+Make a pop-up window with buttons in it
+Make tooltips with variable information
+Make robot div change to a specific robot when click on robot
+Have somebody look at code and suggest improvements
+Save data, load data, save game, etc
+Add content, obviously

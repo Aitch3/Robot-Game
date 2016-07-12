@@ -9,7 +9,7 @@
 	</head>
 	<body>
         <div id="statusBar" class="container fullScreenDiv">
-            <div>I put text here</div>
+            <div><span id=statusBarText>Welcome to Robot Game</span></div>
         </div>
         <div id="leftColumn" class="column" style="float: left">
             <div class="header" title="You and your robofriends">Robots</div>
@@ -35,18 +35,12 @@
                     </div>
                 </div>
             </div>
-            <br>
-            <div class="header">Discoveries</div>
-            <hr>
-            <div class="container" id="discoveries">
-                <div id="dog">Dog</div>
-                <div id="toaster">Toaster</div>
-            </div>
-            <br>
-            <div class="header">Calendar</div>
-            <hr>
-            <div class="container" id="calendar">
-                <div class="clock">Hour:&nbsp;<span id= "hour">0</span>&nbsp;Day:&nbsp;<span id= "day">0</span>&nbsp;Year:&nbsp;<span id= "year">0</span></div>
+            <div  id="discoveries">
+                <div class="header">Discoveries<hr></div>
+                <div class="container">
+                    <div id="dog">Dog</div>
+                    <div id="toaster">Toaster</div>
+                </div>
             </div>
         </div>
         <div id="middleColumn" class="column" style="display: inline-block">
@@ -61,7 +55,6 @@
                 <div id="girder">Girder: <span id="girderAmount">0</span></div>
                 <div id="oil">Oil: <span id="oilAmount">0</span></div>
             </div>
-            <br>
             <div class="header">Technology</div>
             <hr>
             <div class="container" id="tech">
@@ -84,7 +77,6 @@
                 </div>
                 
             </div>
-            <br>
             <div class="header">Land</div>
             <hr>
             <div class="container" id="land">
@@ -96,7 +88,7 @@
             </div>
         </div>
         <div id="bottomBar" class="container fullScreenDiv">
-            <div>I put text here</div>
+            <div class="clock">Hour:&nbsp;<span id= "hour">0</span>&nbsp;Day:&nbsp;<span id= "day">0</span>&nbsp;Year:&nbsp;<span id= "year">0</span></div>
         </div>
     </body>
 
