@@ -1,23 +1,3 @@
-$(document).ready(function () {
-    'use strict';
-	$('#statusBar').click(function () {
-		$(this).fadeOut('slow');
-	});
-});
-
-(function (window, $) {
-	'use strict';
-
-	var $div = $('div');
-
-	function byeBye() {
-		$(this).fadeOut('slow');
-	}
-
-	$div.on('click', byeBye);
-
-})(window, $);
-
 'use strict';
 
 //Yourself
@@ -186,6 +166,9 @@ function makeVisible() {
     if (robofriends.bought === 1 && scrapbot.found === 1) {
         document.getElementById('scrapbot').style.visibility = "visible";
     }
+    if (robofriends.bought === 1) {
+         document.getElementById('statusBar').style.visibility = "visible";
+    }
     if ((grinder.found + grinder.broken) >= 1) {
         document.getElementById('grinder').style.visibility = "visible";
     }
@@ -194,7 +177,6 @@ function makeVisible() {
     }
     if (dog.found === 1 || toaster.found === 1) {
         document.getElementById('discoveries').style.visibility = "visible";
-         document.getElementById('statusBar').style.visibility = "visible"
     }
     if (dog.found === 1) {
         document.getElementById('dog').style.visibility = "visible";

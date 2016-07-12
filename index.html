@@ -4,11 +4,12 @@
         <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="interface.css" />
 		<title>Robot Game 0.0.2</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
         <script src="main.js"></script>
 	</head>
 	<body>
         <div id="statusBar" class="container fullScreenDiv">
+            <div>I put text here</div>
         </div>
         <div id="leftColumn" class="column" style="float: left">
             <div class="header" title="You and your robofriends">Robots</div>
@@ -35,16 +36,16 @@
                 </div>
             </div>
             <br>
+            <div class="header">Discoveries</div>
+            <hr>
             <div class="container" id="discoveries">
-                <div class="header">Discoveries</div>
-                <hr>
                 <div id="dog">Dog</div>
                 <div id="toaster">Toaster</div>
             </div>
             <br>
+            <div class="header">Calendar</div>
+            <hr>
             <div class="container" id="calendar">
-                <div class="header">Calendar</div>
-                <hr>
                 <div class="clock">Hour:&nbsp;<span id= "hour">0</span>&nbsp;Day:&nbsp;<span id= "day">0</span>&nbsp;Year:&nbsp;<span id= "year">0</span></div>
             </div>
         </div>
@@ -61,15 +62,15 @@
                 <div id="oil">Oil: <span id="oilAmount">0</span></div>
             </div>
             <br>
+            <div class="header">Technology</div>
+            <hr>
             <div class="container" id="tech">
-                <div class="header">Technology</div>
-                <hr>
                 <div>Dreams: <span id="dreams">0</span></div>
                 <div id ="robofriends"><button class="button" id="robofriendsBuy" onclick="buyTech('robofriends')" title="You dream of having a buddy!" disabled>Robofriends</button></div>
                 <div id ="electricSheep"><button class="button" id="electricSheepBuy" onclick="buyTech('electricSheep')" title="You dream of electric sheep. zzzzzz..." disabled>Electric Sheep</button></div>
             </div>
         </div>
-        <div id="rightColumn" class="column" style="float: right">
+        <div id="rightColumn" class="column" style="display: inline-block">
             <div class="header">Buildings</div>
             <hr>
             <div class="container" id="buildings">
@@ -84,9 +85,9 @@
                 
             </div>
             <br>
+            <div class="header">Land</div>
+            <hr>
             <div class="container" id="land">
-                <div class="header">Land</div>
-                <hr>
                 <div>
                     <button class="button" id="clearRuins" onclick="clearRuins()">Ruins:&nbsp;</button><span id="ruins">0</span>
                 </div>
@@ -94,7 +95,10 @@
                 <div>Clear land: <span id="clear">0</span></div>
             </div>
         </div>
-          
+        <div id="bottomBar" class="container fullScreenDiv">
+            <div>I put text here</div>
+        </div>
     </body>
+
 </html>
 

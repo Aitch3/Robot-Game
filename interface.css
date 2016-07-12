@@ -1,39 +1,87 @@
 body {
     font-family: 'Vollkorn', serif;
     font size: 16px;
-    color: #009999;
-    padding: 2px;
-    margin: 15px;
+    color: #FFD700;
     background-color: #484848;
-}
-.header {
-    font-weight: bold;
 }
 
 .column {
-    width: 32%;
+    width: 31%;
+    min-width: 170px;
     height: 100%;
     vertical-align: top;
-    margin: 0.66%;
-}
-
-.container {
-    height: 48%;
-}
-
-.fullScreenDiv {
-    width: calc (98%-12px);
     margin: 1%;
 }
 
-div.container {
-    height: 140px;
+.fullScreenDiv {
+    width: calc(98% - 12px);
+    margin: 1%;
+}
+
+.container {
     border-radius: 5px;
     border: 2px solid black;
-    background-color: #D6C2FF;
+    background-color: #778899;
     padding: 4px;
     position: relative;
     overflow-y: auto
+}
+
+.button {
+    font: 16px Vollkorn;
+    background-color: #778899;
+	border: none;
+	display: inline-flex;
+	cursor: pointer;
+	color: #FFFF00;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+.button:hover {
+	background-color: #696969;
+}
+.button:active {
+    position: relative;
+	top: 1px;
+}
+
+.button:disabled {
+    background-color: #778899;
+	border: none;
+	display: inline-flex;
+	cursor: default;
+	color: #FFD700;
+}
+
+.smallButton {
+    font: 12px Vollkorn;
+    background-color: #778899;
+	border: none;
+	display: inline-flex;
+	cursor: pointer;
+	color: #FFFF00;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+.smallButton:hover {
+	background-color: grey;
+}
+.smallButton:active {
+    position: relative;
+	top: 1px;
+}
+
+.smallButton:disabled {
+    background-color: #778899;
+	border: none;
+	display: inline-flex;
+	cursor: default;
+	color: #FFD700;
+}
+
+.header {
+    font-weight: bold;
+    color: #008080;
 }
 
 .cost {
@@ -51,60 +99,17 @@ div.container {
     text-indent: 20px;
 }
 
-.button {
-    font: 16px Vollkorn;
-    background-color: #484848;
-	border: none;
-	display: inline-flex;
-	cursor: pointer;
-	color: cyan;
-    padding: 0px 0px;
-    margin: 0px 0px;
-}
-.button:hover {
-	background-color: grey;
-}
-.button:active {
-    position: relative;
-	top: 1px;
-}
-
-.button:disabled {
-    background-color: #484848;
-	border: none;
-	display: inline-flex;
-	cursor: default;
-	color: #009999;
-}
-
-.smallButton {
-    font: 12px Vollkorn;
-    background-color: #484848;
-	border: none;
-	display: inline-flex;
-	cursor: pointer;
-	color: cyan;
-    padding: 0px 0px;
-    margin: 0px 0px;
-}
-.smallButton:hover {
-	background-color: grey;
-}
-.smallButton:active {
-    position: relative;
-	top: 1px;
-}
-
-.smallButton:disabled {
-    background-color: #484848;
-	border: none;
-	display: inline-flex;
-	cursor: default;
-	color: #009999;
-}
-
 #statusBar {
-   /* visibility: hidden;*/
+    visibility: hidden;
+    top:0;
+    height: 40px;
+}
+
+#bottomBar {
+    position:absolute;
+    left: 0;
+    bottom:0;
+    height: 40px;
 }
 
 #scrapbot {
